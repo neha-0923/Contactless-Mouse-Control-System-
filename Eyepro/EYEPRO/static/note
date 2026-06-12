@@ -1,0 +1,5 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate.ps1
+cd Teju_major_project
+cd EYEPRO
+python app.py
