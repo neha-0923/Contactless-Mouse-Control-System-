@@ -77,6 +77,7 @@ ParameterDescriptionsmoothing_windowNumber of frames averaged to smooth cursor m
 
 🧠 How It Works
 
+```
 Webcam Feed
     │
     ├── FaceTracker (MediaPipe Face Mesh)
@@ -92,12 +93,14 @@ Webcam Feed
     └── MouseController (PyAutoGUI)
           ├── Smoothed cursor movement
           └── Dwell-click logic
+```
 
-Calibration runs automatically on startup. You'll be prompted to look straight ahead, then blink a few times. This sets personalised EAR thresholds for accurate blink detection.
+**Calibration** runs automatically on startup. You'll be prompted to look straight ahead, then blink a few times. This sets personalised EAR thresholds for accurate blink detection.
 
 
 📁 Project Structure
 
+```
 eyepro/
 ├── app.py               # Flask web server and route definitions
 ├── main_controller.py   # Core control loop for all modes
@@ -107,6 +110,7 @@ eyepro/
 ├── config.json          # Runtime configuration
 └── templates/
     └── index.html       # Web UI for mode selection
+```
 
 
 🤝 Contributing
